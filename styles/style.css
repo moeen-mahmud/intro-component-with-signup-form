@@ -1,2 +1,131 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Variables Declaration */
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-red);
+  background-image: url("/images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rem;
+  gap: 6rem;
+}
+
+.content-info .content-title {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--neutral-white);
+}
+
+.content-info .content-para {
+  line-height: 1.5;
+  color: var(--neutral-white);
+}
+
+.content-form {
+  width: 100%;
+}
+
+.content-form .trial-area {
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: var(--accent-blue);
+  border-radius: 0.625rem;
+}
+
+.trial-area .trial-para {
+  color: var(--neutral-white);
+  font-weight: 400;
+}
+
+.trial-para .bolded-text {
+  font-weight: 600;
+}
+
+.form-area {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--neutral-white);
+  border-radius: 0.625rem;
+}
+
+.input-field {
+  width: 100%;
+  margin-top: 0.625rem;
+  padding: 1rem;
+  color: var(--neutral-grayish-blue);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 0.625rem;
+  box-shadow: 0px 5px 25px -4px rgba(30, 30, 60, 0.22);
+}
+
+.error-icon {
+  position: absolute;
+  margin-top: -2.7rem;
+  right: 0;
+  margin-right: 2rem;
+  visibility: hidden;
+}
+
+.err-msg {
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--primary-red);
+  font-weight: 500;
+}
+
+.signup-btn {
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+  padding: 0.8rem 2rem;
+  border: none;
+  background-color: var(--primary-green);
+  color: var(--neutral-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.form-footer {
+  color: var(--neutral-grayish-blue);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.form-footer .highlighted-text {
+  font-size: 12px;
+  color: var(--primary-red);
+}
