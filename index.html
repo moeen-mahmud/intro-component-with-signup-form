@@ -31,64 +31,41 @@
             thereafter
           </p>
         </div>
-        <div class="form-area">
+        <div class="form-area" id="form">
           <input
             type="text"
             placeholder="First Name"
             name="first-name"
             id="first-name"
-            class="input-field"
             required
           />
-          <p id="error-msg"></p>
-          <img
-            src="./images/icon-error.svg"
-            alt="error-icon"
-            class="error-icon"
-          />
+          <p class="error-msg">First name cannot be empty</p>
           <input
             type="text"
             placeholder="Last Name"
-            name="second-name"
-            id="second-name"
-            class="input-field"
+            name="last-name"
+            id="last-name"
             required
           />
-          <p id="error-msg"></p>
-          <img
-            src="./images/icon-error.svg"
-            alt="error-icon"
-            class="error-icon"
-          />
+          <p class="error-msg">Last name cannot be empty</p>
           <input
             type="email"
             placeholder="Email Address"
             name="user-mail"
             id="user-mail"
-            class="input-field"
             required
+            minlength="8"
           />
-          <p id="error-msg"></p>
-          <img
-            src="./images/icon-error.svg"
-            alt="error-icon"
-            class="error-icon"
-          />
+          <p class="error-msg">Looks like this is not an email</p>
           <input
             type="password"
             placeholder="Password"
-            name="first-name"
-            id="first-name"
-            class="input-field"
+            name="user-pass"
+            id="user-pass"
             required
           />
-          <p id="error-msg"></p>
-          <img
-            src="./images/icon-error.svg"
-            alt="error-icon"
-            class="error-icon"
-          />
-          <button id="sign-up" class="signup-btn">claim your free trial</button>
+          <p class="error-msg">Password cannot be empty</p>
+          <button id="sign-up" class="signup-btn">Claim your free trial</button>
           <p class="form-footer">
             By clicking the button, you are agreeing to our
             <span class="highlighted-text">Terms and Services</span>
