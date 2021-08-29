@@ -80,12 +80,17 @@ body {
 input {
   width: 100%;
   margin-top: 0.625rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   font-weight: 600;
   font-size: 0.875rem;
   border: none;
   border-radius: 0.625rem;
   box-shadow: 0px 5px 25px -4px rgba(30, 30, 60, 0.22);
+}
+
+.form-control {
+  position: relative;
 }
 
 .error {
@@ -96,13 +101,16 @@ input {
 }
 
 .error-msg {
+  position: absolute;
+  top: 50px;
+  right: 0;
   text-align: right;
   font-size: 12px;
   font-style: italic;
   color: var(--primary-red);
   font-weight: 500;
   margin-top: 0.9375rem;
-  display: none;
+  /* visibility: hidden; */
 }
 
 .signup-btn {

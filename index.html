@@ -32,39 +32,47 @@
           </p>
         </div>
         <form class="form-area" id="form" novalidate>
-          <input
-            type="text"
-            placeholder="First Name"
-            name="first-name"
-            id="first-name"
-            required
-          />
-          <p class="error-msg">First name cannot be empty</p>
-          <input
-            type="text"
-            placeholder="Last Name"
-            name="last-name"
-            id="last-name"
-            required
-          />
-          <p class="error-msg">Last name cannot be empty</p>
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="user-mail"
-            id="user-mail"
-            required
-            minlength="8"
-          />
-          <p class="error-msg">Looks like this is not an email</p>
-          <input
-            type="password"
-            placeholder="Password"
-            name="user-pass"
-            id="user-pass"
-            required
-          />
-          <p class="error-msg">Password cannot be empty</p>
+          <div class="form-control">
+            <input
+              type="text"
+              placeholder="First Name"
+              name="first-name"
+              id="first-name"
+              required
+            />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="last-name"
+              id="last-name"
+              required
+            />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="user-mail"
+              id="user-mail"
+              required
+              minlength="8"
+            />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              placeholder="Password"
+              name="user-pass"
+              id="user-pass"
+              required
+            />
+            <small></small>
+          </div>
           <button id="sign-up" class="signup-btn">Claim your free trial</button>
           <p class="form-footer">
             By clicking the button, you are agreeing to our
