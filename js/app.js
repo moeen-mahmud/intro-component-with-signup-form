@@ -7,6 +7,9 @@ const userPass = document.getElementById("user-pass");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInputs();
+  if (form.checkValidity() === true) {
+    clearFields();
+  }
 });
 
 const checkInputs = () => {
@@ -20,11 +23,48 @@ const checkInputs = () => {
   } else {
     setSuccessFor(firstName);
   }
+  if (lastNameValue === "") {
+    setErrorFor(lastName, "Last name cannot be empty");
+  } else {
+    setSuccessFor(lastName);
+  }
+  if (!isMail(userMailValue)) {
+    setErrorFor(userMail, "Looks like this is not an email");
+  } else {
+    setSuccessFor(userMail);
+  }
+  if (userPassValue === "") {
+    setErrorFor(userPass, "Password cannot be empty");
+  } else {
+    setSuccessFor(userPass);
+  }
 };
 
 const setErrorFor = (input, message) => {
-  const small = document.querySelector("small");
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
   small.classList.add("error-msg");
   small.innerText = message;
   input.classList.add("error");
+};
+
+const setSuccessFor = (input) => {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  small.innerText = "";
+  small.classList.remove("error-msg");
+  input.classList.remove("error");
+};
+
+const isMail = (userMail) => {
+  return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(
+    userMail
+  );
+};
+
+const clearFields = () => {
+  firstName.value = "";
+  lastName.value = "";
+  userMail.value = "";
+  userPass.value = "";
 };
