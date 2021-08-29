@@ -28,7 +28,7 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
+  min-height: 97vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@ body {
   color: var(--neutral-white);
 }
 
-.content-info .content-para {
+.content-para {
   line-height: 1.5;
   color: var(--neutral-white);
 }
@@ -66,7 +66,7 @@ body {
   font-weight: 400;
 }
 
-.trial-para .bolded-text {
+.bolded-text {
   font-weight: 600;
 }
 
@@ -105,7 +105,7 @@ input {
   top: 50px;
   right: 0;
   text-align: right;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: italic;
   color: var(--primary-red);
   font-weight: 500;
@@ -129,11 +129,64 @@ input {
 .form-footer {
   color: var(--neutral-grayish-blue);
   text-align: center;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 600;
 }
 
 .form-footer .highlighted-text {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--primary-red);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution > a {
+  text-decoration: none;
+  color: var(--accent-blue);
+}
+
+/* Media Queries */
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    padding: 0 2rem;
+    gap: 2.5rem;
+  }
+
+  .content-info .content-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .content-info .content-para {
+    text-align: center;
+  }
+
+  .content-form .trial-area {
+    padding: 1rem 3rem;
+  }
+
+  input {
+    font-size: 0.75rem;
+  }
+
+  .error {
+    background-size: 1rem 1rem;
+  }
+
+  .error-msg {
+    font-size: 0.625rem;
+  }
+
+  .signup-btn {
+    font-size: 0.875rem;
+  }
+
+  .form-footer {
+    padding: 0 0.625rem;
+  }
 }

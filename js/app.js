@@ -42,6 +42,7 @@ const checkInputs = () => {
 
 const setErrorFor = (input, message) => {
   const formControl = input.parentElement;
+  input.style.color = "hsl(0, 100%, 74%)";
   const small = formControl.querySelector("small");
   small.classList.add("error-msg");
   small.innerText = message;
