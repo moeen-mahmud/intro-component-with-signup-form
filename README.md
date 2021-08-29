@@ -69,7 +69,7 @@ This is my first **Frontend Mentor** challenge from JS section. It's relatively 
 
 ## Author
 
-- Frontend Mentor - [fahim-mahmud](https://www.frontendmentor.io/profile/fahim-mahmud)
+- Frontend Mentor - [moeen-mahmud](https://www.frontendmentor.io/profile/moeen-mahmud)
 - Twitter - [moeen_mahmud](https://twitter.com/moeen_mahmud)
 
 ## Acknowledgments
